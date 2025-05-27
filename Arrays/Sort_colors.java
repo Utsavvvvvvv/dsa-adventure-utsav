@@ -55,3 +55,24 @@ for(int i=0;i<nums.length;i++)
         for (int i = c0 + c1; i < nums.length; i++) nums[i]=2;
     }
 }
+
+//🚀 Dutch National Flag Algorithm
+// The dutch national flag algorithm involves sorting the nums array by partitioning it into 3 segments.
+// nums[0]...nums[low - 1] : This part should consist of all zeroes.
+// nums[low]...nums[mid - 1] : This part should consist of all ones.
+// nums[mid]...nums[end of array] : This part should consist of all twos.
+// Here is how the 3 segments look like →
+
+
+// We basically look for 3 possible cases for 3 values of mid here,
+// 1️⃣ Case 1 → Value of mid is 0
+// Swap it with low because we want all 0's to be before mid.
+// 2️⃣ Case 2 → Value of mid is 1
+// Increment mid because 1 is at the correct position it should be.
+// 3️⃣ Case 3 → Value of mid is 2
+// We swap it with high because we want all 2's to be after high.
+// image.png
+
+// 🕒 Time Complexity: O(n)
+// 💾 Space Complexity: O(1)
+    
