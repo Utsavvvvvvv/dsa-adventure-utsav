@@ -78,7 +78,8 @@ if (root == null)
                     nextLevel.add(node.left);
                 }
                 if (node.right != null) {
-                    nextLevel.add(node.right);
+                    nextLevel.add(no^^2
+                    de.right);
                 }
             }
 
